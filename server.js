@@ -1,4 +1,5 @@
 const express = require('express');
+const helmet = require('helmet');
 
 const server = express();
 
@@ -8,6 +9,6 @@ server.get('/', (req, res) => {
 
 //custom middleware
 
-function logger(req, res, next) {}
+function logger(req, res, next) { }
 
 module.exports = server;
